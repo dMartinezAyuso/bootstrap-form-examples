@@ -2,6 +2,6 @@
 
 Examples for the form in Bootstrap
 
-*sudo npm install*
-*bower install*
-*grunt server*
+- *sudo npm install*
+- *bower install*
+- *grunt server*
