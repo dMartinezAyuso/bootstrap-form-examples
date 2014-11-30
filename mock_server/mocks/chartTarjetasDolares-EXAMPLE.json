@@ -1,0 +1,57 @@
+{
+    "statusCode":"200",
+    "statusText":"OK",
+    "result":{
+        "options" : {
+            "title" : {
+                "text" : "Dólares (US$)"
+            },
+            "legend" : {
+                "verticalAlign" : "bottom",
+                "borderWidth" : 0
+            }
+        },
+    	"tooltip" : {
+            "pointFormat" : "{point.key}<br/><b>$ {point.y}</b> ({point.percentage:.1f}%)",
+            "backgroundColor" : "#FFFFFF"
+        },
+        "series" : [
+            {
+                "type" : "pie",
+                "name" : "Dólares",
+                "data" : [
+                    {
+                        "porcentaje" : 75,
+                        "name" : "Monto utilizado",
+                        "name2" : "Dólares",
+                        "y" : 75,
+                        "sliced" : false,
+                        "selected" : false,
+                        "color" : {
+                            "radialGradient" : {"cx":"0.5","cy":"0.5","r":"0.5"},
+                            "stops" : [
+                               [0, "#C97628"],
+                               [1, "#BC6718"]
+                            ]
+                        }
+                    },
+                    {
+                        "porcentaje" : 25,
+                        "name" : "Monto disponible",
+                        "name2" : "Dólares",
+                        "y" : 25,
+                        "sliced" : false,
+                        "selected" : true,
+                        "color" : {
+                            "radialGradient" : {"cx":"0.5","cy":"0.5","r":"0.5"},
+                            "stops" : [
+                               [0, "#F7A645"],
+                               [1, "#F6891E"]
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "statusCode":"200",
+    "statusText":"OK",
+    "result":{
+        "count":3,
+        "chequesRechazados":[
+            {
+                "importe":10.00,
+                "nroCheque":"0000021321",
+                "motivo":"mal endozado",
+                "fecha":"24/07/2014",
+                "banco":"galicia"
+            },
+            {
+                "importe":10.00,
+                "nroCheque":"0000021321",
+                "motivo":"mal endozado",
+                "fecha":"24/07/2014",
+                "banco":"galicia"
+            },
+            {
+                "importe":10.00,
+                "nroCheque":"00000234321",
+                "motivo":"sin fondos",
+                "fecha":"24/07/2014",
+                "banco":"santaner rio"
+            }
+        ]
+    }
+}
