@@ -1,0 +1,78 @@
+<div class="container">
+    <p class="info">
+        Crea diferentes tipos de botones con ayuda de cualquiera de las clases CSS definidas por Bootstrap.
+    </p>
+    <!-- Botón normal -->
+    <button type="button" class="btn btn-default">Normal</button>
+
+    <!-- Muestra el botón de forma destacada para descubrir fácilmente el botón principal dentro de un grupo de botones -->
+    <button type="button" class="btn btn-primary">Destacado</button>
+
+    <!-- Indica una acción exitosa o positiva -->
+    <button type="button" class="btn btn-success">Éxito</button>
+
+    <!-- Botón pensado para los mensajes con alertas informativas -->
+    <button type="button" class="btn btn-info">Información</button>
+
+    <!-- Indica que hay que tener cuidado con la acción asociada al botón -->
+    <button type="button" class="btn btn-warning">Advertencia</button>
+
+    <!-- Indica una acción negativa o potencialmente peligrosa -->
+    <button type="button" class="btn btn-danger">Peligro</button>
+
+    <!-- Resta importancia al botón haciéndolo parecer un simple enlace, aunque conserva tu comportamiento original de botón -->
+    <button type="button" class="btn btn-link">Enlace</button>
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>BOTONES DE DIFERENTE TAMAÑO</strong><br>
+        Cuando necesites crear botones más grandes o más pequeños que el tamaño estándar, utiliza las clases '.btn-lg (grande)', '.btn-sm (pequeño)' y '.btn-xs (extra pequeño)'.
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary btn-lg">Botón grande</button>
+        <button type="button" class="btn btn-default btn-lg">Botón grande</button>
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary">Botón normal</button>
+        <button type="button" class="btn btn-default">Botón normal</button>
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary btn-sm">Botón pequeño</button>
+        <button type="button" class="btn btn-default btn-sm">Botón pequeño</button>
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary btn-xs">Botón extra pequeño</button>
+        <button type="button" class="btn btn-default btn-xs">Botón extra pequeño</button>
+    </p>
+    <p class="info">
+        También puedes convertir el botón en un elemento de bloque para hacer que ocupe toda la anchura del elemento en el que se encuentre. Para ello, añade la clase .btn-block.
+    </p>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Botón de bloque</button>
+    <button type="button" class="btn btn-default btn-lg btn-block">Botón de bloque</button>
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>BOTONES ACTIVADOS</strong><br>
+        Los elementos 'button' consiguen este efecto mediante la pseudo-clase :active y los elementos 'a' mediante la clase '.active'.<br>
+        No obstante, si quieres forzar a que el botón muestre el aspecto presionado, añade la clase '.active'.
+    </p>
+    <button type="button" class="btn btn-primary btn-lg active">Botón principal</button>
+    <button type="button" class="btn btn-default btn-lg active">Botón</button>
+    <br><br>
+    <a href="#" class="btn btn-primary btn-lg active" role="button">Enlace principal</a>
+    <a href="#" class="btn btn-default btn-lg active" role="button">Enlace</a>
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>BOTONES DESACTIVADOS</strong><br>
+        Utiliza los estilos de Bootstrap que reducen su opacidad un 50% añaduiendo el atributo 'disabled'
+    </p>
+    <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Botón principal</button>
+    <button type="button" class="btn btn-default btn-lg" disabled="disabled">Botón</button>
+    <br><br>
+    <a href="#" class="btn btn-primary btn-lg disabled" role="button">Enlace principal</a>
+    <a href="#" class="btn btn-default btn-lg disabled" role="button">Enlace</a>
+</div>

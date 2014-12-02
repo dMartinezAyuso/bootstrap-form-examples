@@ -1,0 +1,110 @@
+<div class="container">
+    <p class="info">
+        <strong>INPUTS</strong><br>
+        Los campos de tipo 'input' son los más numerosos, ya que con HTML5 la lista se ha ampliado a text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, y color. Bootstrap 3 solamente aplica los estilos a los campos 'input' que definen explícitamente su tipo mediante el atributo type.
+    </p>
+    <input type="text" class="form-control" placeholder="Campo de texto">
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>TEXTAREA</strong><br>
+        Utiliza este control para escribir textos largos, modificando el valor del atributo rows para ajustarlo al número de líneas que prefieras.
+    </p>
+    <textarea class="form-control" rows="3"></textarea>
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>CHECKBOXES & RADIO-BUTTONS</strong><br>
+        Los checkboxes permiten elegir una o más opciones dentro de una lista, mientras que los radio buttons permiten elegir una sola opción entre varias.
+    </p>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">
+            Esta es una opción muy interesante que tienes que pinchar
+        </label>
+    </div>
+
+    <div class="radio">
+        <label>
+            <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
+            Esta es una opción muy interesante que tienes que pinchar
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="opciones" id="opciones_2" value="opcion_2">
+            Esta otra opción también es muy interesante y al pincharla, deseleccionas la opción anterior
+        </label>
+    </div>
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>CHECKBOXES & RADIO-BUTTONS INLINE</strong><br>
+        Si prefieres mostrar los checkboxes y los radio buttons en línea para que ocupen menos espacio, utiliza las clases CSS .checkbox-inline o .radio-inline.
+    </p>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="checkboxEnLinea1" value="opcion_1"> 1
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="checkboxEnLinea2" value="opcion_2"> 2
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="checkboxEnLinea3" value="opcion_3"> 3
+    </label>
+    <br>
+    <label class="radio-inline">
+        <input type="radio" name="opciones" id="radioEnLinea1" value="opcion_1"> 1
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="opciones" id="radioEnLinea2" value="opcion_2"> 2
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="opciones" id="radioEnLinea3" value="opcion_3"> 3
+    </label>
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>LISTAS DESPLEGABLES</strong><br>
+        Para mostrar una lista desplegada, añade el atributo multiple.
+    </p>
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+    <br>
+    <select multiple class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>CAMPOS DE FORMULARIO ESTÁTICOS</strong><br>
+        En ocasiones puede ser necesario mostrar texto al lado de un elemento <strong>label</strong> en un formulario horizontal. Para ello, añade el texto mediante un <strong>p</strong> con la clase .form-control-static. Esta técnica es útil por ejemplo para mostrar el valor de los campos de formulario no editables.
+    </p>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-10">
+                <p class="form-control-static">email@ejemplo.com</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-lg-2 control-label">Contraseña</label>
+            <div class="col-lg-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+            </div>
+        </div>
+    </form>
+</div>

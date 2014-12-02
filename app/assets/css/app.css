@@ -52,3 +52,14 @@
   border-color: #A1A1A1;
   border-width: 1px;
 }
+/* line 48, ../scss/app.scss */
+.container .separator {
+  margin: 40px 0;
+  border-top: 8px solid #afa3a3;
+}
+/* line 52, ../scss/app.scss */
+.container .help-container {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}

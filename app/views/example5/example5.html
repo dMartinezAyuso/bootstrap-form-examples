@@ -1,0 +1,63 @@
+<div class="container">
+    <p class="info">
+        <strong>CAMPOS SELECCIONADOS</strong><br>
+        Bootstrap 3 aplica una sombra a los campos seleccionados mediante la propiedad 'box-shadow' de CSS aplicada a la pseudo-clase ':focus' del elemento.
+    </p>
+    <input class="form-control" id="inputSeleccionado" type="text" value="Este campo está seleccionado...">
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>CAMPOS DESHABILITADOS</strong><br>
+        Añadiendo el atributo 'disabled' a cualquier campo de texto evitas que el usuario pueda introducir información y Bootstrap 3 lo muestra con un aspecto muy diferente.
+    </p>
+    <input class="form-control" id="campoDeshabilitado" type="text" placeholder="Este campo está deshabilitado..." disabled>
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>DESHABLITIANDO GRUPOS DE CAMPOS DE FORMULARIO</strong><br>
+        Además de deshabilitar campos individuales, también es posible añadir el atributo disabled a un elemento 'fieldset' para deshabilitar cualquier campo de formulario que se encuentre en su interior.<br>
+        Esta clase sólo afecta al aspecto de los enlaces 'a class="btn btn-default"', pero no a su funcionalidad. Para deshabilitar realmente los enlaces, tendrás que utilizar código JavaScript.<br>
+        Internet Explorer 9 y sus versiones anteriores no soportan el uso del atributo disabled en el elemento 'fieldset', por lo que tendrás que utilizar algo de código JavaScript para deshabilitar los campos en ese navegador.
+    </p>
+    <form role="form">
+        <fieldset disabled>
+            <div class="form-group">
+                <label for="disabledTextInput">Campo deshabilitado</label>
+                <input type="text" id="campoDeshabilitado" class="form-control" placeholder="Campo deshabilitado">
+            </div>
+            <div class="form-group">
+                <label for="listaDeshabilitada">Lista deshabilitada</label>
+                <select id="listaDeshabilitada" class="form-control">
+                    <option>Lista deshabilitada</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> No puedes pinchar esta opción
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </fieldset>
+    </form>
+
+    <hr class="separator">
+
+    <p class="info">
+        <strong>ESTADOS DE VALIDACIÓN</strong><br>
+        Bootstrap 3 define varios estilos para indicar el estado de la validación de cada campo del formulario: '.has-warning' para las advertencias, '.has-error' para los errores y '.has-success' para cuando el valor es correcto. Lo mejor es que estas clases se pueden aplicar a cualquier elemento que contenga una de las tres siguientes clases: '.control-label', '.form-control' y '.help-block'.
+    </p>
+    <div class="form-group has-success">
+        <label class="control-label" for="inputSuccess">Campo con un valor válido</label>
+        <input type="text" class="form-control" id="campoValido">
+    </div>
+    <div class="form-group has-warning">
+        <label class="control-label" for="inputWarning">Campo con una advertencia</label>
+        <input type="text" class="form-control" id="campoAdvertencia">
+    </div>
+    <div class="form-group has-error">
+        <label class="control-label" for="inputError">Campo con un error</label>
+        <input type="text" class="form-control" id="campoError">
+    </div>
+</div>
