@@ -5,7 +5,7 @@
     border-bottom: 0.1em solid green;
     margin-bottom: 2em;
     padding: 0 0 0.5em;
-    
+
     &:before {
         content: "[";
     }
@@ -18,12 +18,31 @@
         display: inline;
         &:before {
             content: "|";
-            padding-right: 0.3em;  
+            padding-right: 0.3em;
         }
 
         &:nth-child(1):before {
             content: "";
             padding: 0;
         }
+    }
+}
+
+.container {
+    position: relative;
+    padding: 10% 15%;
+    border-style: solid;
+    @media(min-width:768px) {
+        margin: 0 auto;
+        border-color: #ddd;
+        border-width: 1px;
+        border-radius: 4px 0;
+    }
+    .info{
+        background-color: #F5E9AB;
+        padding: 3px 5px;
+        border-style: solid;
+        border-color: #A1A1A1;
+        border-width: 1px;
     }
 }
